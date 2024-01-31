@@ -1,6 +1,6 @@
 @font-face {
   font-family: Inter;
-  src: url("../assets/fonts/static/Inter-Regular.ttf");
+  src: url("assets/fonts/static/Inter-Regular.ttf");
 }
 body {
   margin: 0;
@@ -92,4 +92,4 @@ p {
   .attribution {
     font-size: 9px;
   }
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -21,7 +21,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/KKajet/ft-social-links-profile)
-- Live Site URL: [Add live site URL here]()
+- Live Site URL: [Add live site URL here](https://frontend-mentor-social-links-profile-six.vercel.app/)
 
 ## My process
 

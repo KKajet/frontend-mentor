@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/KKajet/ft-social-links-profile)
-- Live Site URL: [Add live site URL here](https://kkajet.github.io/ft-social-links-profile/)
+- Live Site URL: [Add live site URL here](https://frontend-mentor-kfzpi28hh-kkajets-projects.vercel.app/)
 
 ## My process
 
