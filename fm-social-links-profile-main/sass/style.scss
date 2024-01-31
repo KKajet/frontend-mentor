@@ -1,0 +1,99 @@
+@import "./variables";
+
+@font-face {
+  font-family: Inter;
+  src: url("assets/fonts/static/Inter-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+  background-color: $off-black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+p {
+  font-size: 14px;
+}
+
+.social-links-profile {
+  width: 350px;
+  height: 550px;
+  background-color: $dark-grey;
+  text-align: center;
+  border-radius: 16px;
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    margin-inline: auto;
+    margin-block: 1.5rem;
+  }
+  h1 {
+    color: $white;
+    font-weight: 700;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+  }
+  .location {
+    color: $green;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+  .description {
+    color: $white;
+    font-weight: 400;
+    margin-block: 1.5rem;
+  }
+  .page-button {
+    width: 80%;
+    height: 40px;
+    margin: 7px;
+    background-color: $grey;
+    border-radius: 5px;
+    color: $white;
+    border: none;
+    font-weight: 600;
+  }
+  input:hover {
+    cursor: pointer;
+    background-color: $green;
+    color: $grey;
+    transition: all 500ms;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: $white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .social-links-profile {
+    width: 80%;
+    height: 550px;
+    .page-button {
+      height: 40px;
+    }
+    .description {
+      font-size: 0.8em;
+    }
+  }
+
+  .attribution {
+    font-size: 9px;
+  }
+}
