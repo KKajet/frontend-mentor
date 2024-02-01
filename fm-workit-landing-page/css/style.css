@@ -118,7 +118,7 @@ header .learn-class .learn-button:hover {
   justify-content: center;
   text-align: center;
   padding-top: 22rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   margin: 0rem auto 4rem auto;
   width: 90%;
 }
@@ -230,7 +230,7 @@ header .learn-class .learn-button:hover {
 
 .wave {
   position: absolute;
-  top: 100%;
+  top: 99%;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -369,7 +369,7 @@ header .learn-class .learn-button:hover {
   #founder .founder-circles {
     position: absolute;
     top: 83%;
-    left: 63%;
+    left: 53%;
     z-index: 3;
   }
   #founder .access-card {
@@ -388,16 +388,18 @@ header .learn-class .learn-button:hover {
   }
   #founder .founder-circles {
     position: absolute;
+    width: 150px;
     top: 85%;
-    left: 63%;
+    left: 60%;
     z-index: 3;
   }
   #founder h2 {
     font-size: 3rem;
+    margin-top: 1rem;
   }
   #founder .access-card {
     width: 730px;
-    height: 700px;
+    height: 550px;
   }
 }
 @media screen and (max-width: 740px) {
@@ -435,6 +437,9 @@ header .learn-class .learn-button:hover {
   #founder .access-card-content {
     padding: 0rem 2rem;
   }
+  #list-section .container .list-flex .list .feature-text {
+    margin: auto;
+  }
   .access-card-content h2 {
     font-size: 48px;
     margin-top: 3rem;
@@ -444,6 +449,9 @@ header .learn-class .learn-button:hover {
   }
   .founder-btn {
     margin: 0 auto;
+  }
+  .access-button {
+    margin: auto;
   }
 }
 @media screen and (max-width: 653px) {
@@ -455,11 +463,6 @@ header .learn-class .learn-button:hover {
     font-size: 3.5rem;
     width: 500px;
     margin-inline: auto;
-  }
-  header .img-phone {
-    width: 450px;
-    top: 90%;
-    left: 18%;
   }
   #list-section {
     background-color: rgb(253, 250, 255);
@@ -510,6 +513,7 @@ header .learn-class .learn-button:hover {
     height: auto;
     margin-right: 0;
     margin-top: -20rem;
+    margin-bottom: 50px;
   }
   #founder h2 {
     padding-top: 2rem;
@@ -551,9 +555,17 @@ header .learn-class .learn-button:hover {
     padding-top: 15rem;
   }
 }
+@media screen and (max-width: 444px) {
+  #founder .access-card {
+    height: 35rem;
+  }
+  #founder .access-button {
+    margin: auto;
+  }
+}
 @media screen and (max-width: 414px) {
   header {
-    height: 340px;
+    height: 360px;
   }
   header h1 {
     width: 300px;
@@ -563,8 +575,17 @@ header .learn-class .learn-button:hover {
     top: 96%;
     left: 15%;
   }
+  #list-section .container .list-flex .list .feature-text {
+    margin: auto;
+  }
+  #founder .access-card {
+    height: 35rem;
+  }
+  #founder .access-button {
+    margin: auto;
+  }
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 310px) {
   header {
     height: 340px;
   }
@@ -576,13 +597,31 @@ header .learn-class .learn-button:hover {
     top: 94%;
     left: 10%;
   }
-  header .apply-button {
-    font-size: 70%;
-  }
   header .logo-light {
     width: 20%;
   }
   #list-section .container .list-flex {
     padding-top: 13rem;
+  }
+  header .learn-class .learn-button {
+    width: 60%;
+    height: 3rem;
+  }
+  header h1 {
+    font-size: 1.5rem;
+    width: 140px;
+  }
+  header .img-phone {
+    width: 80%;
+  }
+  #founder .access-card {
+    height: 45rem;
+  }
+  #founder .access-card .access-card-content .access-button {
+    width: 80%;
+    height: 50%;
+  }
+  #founder .access-card .access-card-content .access-button {
+    height: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */
