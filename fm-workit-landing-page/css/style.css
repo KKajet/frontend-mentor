@@ -71,7 +71,7 @@ header .img-phone {
   width: 715px;
   position: absolute;
   top: 76%;
-  left: 28%;
+  left: 31%;
   z-index: 5;
 }
 header .learn-class {
@@ -99,7 +99,7 @@ header .learn-class .learn-button {
 }
 header .learn-class .learn-button:hover {
   background-color: transparent;
-  border: 3px solid rgb(68, 255, 161);
+  border: 2px solid rgb(68, 255, 161);
   color: rgb(68, 255, 161);
   cursor: pointer;
   transition: background-color 100ms ease-in-out;
@@ -201,9 +201,11 @@ header .learn-class .learn-button:hover {
 }
 
 .access-button:hover {
-  background-color: #24053e;
-  color: #44ffa1;
-  border: 1px solid #44ffa1;
+  background-color: transparent;
+  border: 2px solid rgb(68, 255, 161);
+  color: rgb(68, 255, 161);
+  cursor: pointer;
+  transition: background-color 100ms ease-in-out;
 }
 
 .founder-circles {

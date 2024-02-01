@@ -68,7 +68,7 @@ header {
     width: 715px;
     position: absolute;
     top: 76%;
-    left: 28%;
+    left: 31%;
     z-index: 5;
   }
   .learn-class {
@@ -96,7 +96,7 @@ header {
     }
     .learn-button:hover {
       background-color: transparent;
-      border: 3px solid $green;
+      border: 2px solid $green;
       color: $green;
       cursor: pointer;
       transition: background-color 100ms ease-in-out;
@@ -202,9 +202,11 @@ header {
 }
 
 .access-button:hover {
-  background-color: #24053e;
-  color: #44ffa1;
-  border: 1px solid #44ffa1;
+  background-color: transparent;
+  border: 2px solid $green;
+  color: $green;
+  cursor: pointer;
+  transition: background-color 100ms ease-in-out;
 }
 
 .founder-circles {
