@@ -118,7 +118,7 @@ header .learn-class .learn-button:hover {
   justify-content: center;
   text-align: center;
   padding-top: 22rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   margin: 0rem auto 4rem auto;
   width: 90%;
 }
@@ -147,6 +147,85 @@ header .learn-class .learn-button:hover {
   text-align: center;
 }
 
+#founder {
+  margin-top: 25rem;
+  margin-bottom: 4rem;
+}
+
+.founder-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.founder-img {
+  width: 477px;
+  height: 477px;
+  margin-right: -7rem;
+  margin-top: -20rem;
+}
+
+.access-card {
+  background-color: #24053e;
+  color: white;
+  width: 730px;
+  height: 413px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.access-card-content {
+  padding: 0rem 4rem;
+}
+.access-card-content h2 {
+  font-size: 56px;
+  padding-bottom: 2rem;
+}
+.access-card-content p {
+  margin-bottom: 2rem;
+}
+
+.access-button {
+  cursor: pointer;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #44ffa1;
+  color: #24053e;
+  border: none;
+  height: 60px;
+  width: 190px;
+  transition: all 0.2s ease-in;
+}
+
+.access-button:hover {
+  background-color: #24053e;
+  color: #44ffa1;
+  border: 1px solid #44ffa1;
+}
+
+.founder-circles {
+  position: absolute;
+  top: 70%;
+  left: 63%;
+}
+
+#footer {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+#footer .logo-dark {
+  margin-bottom: 2em;
+}
+#footer .flex-icon {
+  display: flex;
+  justify-content: space-between;
+  width: 8rem;
+  margin: auto;
+}
+
 .wave {
   position: absolute;
   top: 100%;
@@ -173,6 +252,7 @@ header .learn-class .learn-button:hover {
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  z-index: -4;
 }
 .wave-second svg {
   position: relative;
@@ -220,6 +300,16 @@ header .learn-class .learn-button:hover {
   header .img-phone {
     top: 82%;
     left: 17%;
+  }
+  #founder .founder-circles {
+    position: absolute;
+    top: 80%;
+    left: 63%;
+    z-index: 3;
+  }
+  #founder .access-card {
+    width: 730px;
+    height: 480px;
   }
   #list-section {
     background-color: rgb(253, 250, 255);
@@ -274,6 +364,16 @@ header .learn-class .learn-button:hover {
     top: 90%;
     left: 20%;
   }
+  #founder .founder-circles {
+    position: absolute;
+    top: 83%;
+    left: 63%;
+    z-index: 3;
+  }
+  #founder .access-card {
+    width: 730px;
+    height: 600px;
+  }
 }
 @media screen and (max-width: 820px) {
   header {
@@ -284,6 +384,19 @@ header .learn-class .learn-button:hover {
     top: 90%;
     left: 17%;
   }
+  #founder .founder-circles {
+    position: absolute;
+    top: 85%;
+    left: 63%;
+    z-index: 3;
+  }
+  #founder h2 {
+    font-size: 3rem;
+  }
+  #founder .access-card {
+    width: 730px;
+    height: 700px;
+  }
 }
 @media screen and (max-width: 740px) {
   header {
@@ -293,6 +406,42 @@ header .learn-class .learn-button:hover {
     width: 550px;
     top: 90%;
     left: 14%;
+  }
+  #founder {
+    margin-top: 20rem;
+    margin-bottom: 4rem;
+  }
+  #founder .founder-flex-container {
+    flex-direction: column;
+  }
+  #founder .founder-circles {
+    display: none;
+  }
+  #founder .founder-img {
+    width: 100%;
+    height: auto;
+    margin-right: 0rem;
+    margin-top: -10rem;
+  }
+  #founder .access-card {
+    width: 100%;
+    height: 400px;
+    display: block;
+    text-align: center;
+    margin-top: -6rem;
+  }
+  #founder .access-card-content {
+    padding: 0rem 2rem;
+  }
+  .access-card-content h2 {
+    font-size: 48px;
+    margin-top: 3rem;
+  }
+  .access-card-content p {
+    margin-bottom: 2rem;
+  }
+  .founder-btn {
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 653px) {
@@ -341,6 +490,27 @@ header .learn-class .learn-button:hover {
   #list-section .container .list-flex .list p {
     padding: 0px;
     color: rgb(88, 77, 98);
+  }
+  #founder {
+    margin-top: 27rem;
+  }
+  #founder .founder-flex-container {
+    flex-direction: column;
+  }
+  #founder .access-card {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    height: 30rem;
+  }
+  #founder .founder-img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-top: -20rem;
+  }
+  #founder h2 {
+    padding-top: 2rem;
   }
 }
 @media screen and (max-width: 607px) {

@@ -117,7 +117,7 @@ header {
       justify-content: center;
       text-align: center;
       padding-top: 22rem;
-      padding-bottom: 2rem;
+      padding-bottom: 4rem;
       margin: 0rem auto 4rem auto;
       width: 90%;
       .list {
@@ -150,6 +150,81 @@ header {
   }
 }
 
+#founder {
+  margin-top: 25rem;
+  margin-bottom: 4rem;
+}
+.founder-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.founder-img {
+  width: 477px;
+  height: 477px;
+  margin-right: -7rem;
+  margin-top: -20rem;
+}
+
+.access-card {
+  background-color: #24053e;
+  color: white;
+  width: 730px;
+  height: 413px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.access-card-content {
+  padding: 0rem 4rem;
+  h2 {
+    font-size: 56px;
+    padding-bottom: 2rem;
+  }
+  p {
+    margin-bottom: 2rem;
+  }
+}
+
+.access-button {
+  cursor: pointer;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #44ffa1;
+  color: #24053e;
+  border: none;
+  height: 60px;
+  width: 190px;
+  transition: all 0.2s ease-in;
+}
+
+.access-button:hover {
+  background-color: #24053e;
+  color: #44ffa1;
+  border: 1px solid #44ffa1;
+}
+
+.founder-circles {
+  position: absolute;
+  top: 70%;
+  left: 63%;
+}
+#footer {
+  text-align: center;
+  margin-bottom: 3rem;
+  .logo-dark {
+    margin-bottom: 2em;
+  }
+  .flex-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 8rem;
+    margin: auto;
+  }
+}
 .wave {
   position: absolute;
   top: 100%;
@@ -175,6 +250,7 @@ header {
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  z-index: -4;
   svg {
     position: relative;
     display: block;
@@ -222,6 +298,18 @@ header {
     .img-phone {
       top: 82%;
       left: 17%;
+    }
+  }
+  #founder {
+    .founder-circles {
+      position: absolute;
+      top: 80%;
+      left: 63%;
+      z-index: 3;
+    }
+    .access-card {
+      width: 730px;
+      height: 480px;
     }
   }
   #list-section {
@@ -278,6 +366,18 @@ header {
       left: 20%;
     }
   }
+  #founder {
+    .founder-circles {
+      position: absolute;
+      top: 83%;
+      left: 63%;
+      z-index: 3;
+    }
+    .access-card {
+      width: 730px;
+      height: 600px;
+    }
+  }
 }
 @media screen and (max-width: 820px) {
   header {
@@ -286,6 +386,21 @@ header {
       width: 550px;
       top: 90%;
       left: 17%;
+    }
+  }
+  #founder {
+    .founder-circles {
+      position: absolute;
+      top: 85%;
+      left: 63%;
+      z-index: 3;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    .access-card {
+      width: 730px;
+      height: 700px;
     }
   }
 }
@@ -299,7 +414,47 @@ header {
       left: 14%;
     }
   }
+  #founder {
+    margin-top: 20rem;
+    margin-bottom: 4rem;
+    .founder-flex-container {
+      flex-direction: column;
+    }
+    .founder-circles {
+      display: none;
+    }
+    .founder-img {
+      width: 100%;
+      height: auto;
+      margin-right: 0rem;
+      margin-top: -10rem;
+    }
+    .access-card {
+      width: 100%;
+      height: 400px;
+      display: block;
+      text-align: center;
+      margin-top: -6rem;
+    }
+    .access-card-content {
+      padding: 0rem 2rem;
+    }
+  }
+
+  .access-card-content h2 {
+    font-size: 48px;
+    margin-top: 3rem;
+  }
+
+  .access-card-content p {
+    margin-bottom: 2rem;
+  }
+
+  .founder-btn {
+    margin: 0 auto;
+  }
 }
+
 @media screen and (max-width: 653px) {
   header {
     height: 450px;
@@ -347,7 +502,30 @@ header {
       }
     }
   }
+  #founder {
+    margin-top: 27rem;
+    .founder-flex-container {
+      flex-direction: column;
+    }
+    .access-card {
+      display: block;
+      width: 100%;
+      margin-left: 0;
+      height: 30rem;
+    }
+
+    .founder-img {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+      margin-top: -20rem;
+    }
+    h2 {
+      padding-top: 2rem;
+    }
+  }
 }
+
 @media screen and (max-width: 607px) {
   header {
     height: 400px;
