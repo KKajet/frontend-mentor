@@ -1,7 +1,7 @@
 Hello, this respository was created for publishing my challenges solution from Frontend Mentor. I hope 
 
 <p align="center">  
-<img src="image/frontend-mentor.png"/>  
+<img src="image/frontend-mentor-logo.png"/>  
 </p>
 
 Frontend Mentor Profile [Frontend Mentor](https://www.frontendmentor.io/profile/KKajet)
