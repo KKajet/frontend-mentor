@@ -1,9 +1,6 @@
 @import "./variables";
 
-@font-face {
-  font-family: Inter;
-  src: url("assets/fonts/static/Inter-Regular.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@400;700&display=swap");
 
 body {
   margin: 0;
