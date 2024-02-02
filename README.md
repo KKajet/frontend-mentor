@@ -1,4 +1,4 @@
-Hello, this respository was created for publishing my challenges solution from Frontend Mentor. I hope 
+Hello, this repository was created for publishing my challenges solution from Frontend Mentor.
 
 <p align="center">  
 <img src="images/frontend-mentor-logo.png"/>  
