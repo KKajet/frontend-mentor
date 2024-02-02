@@ -57,7 +57,7 @@ header .apply-button {
   background-color: transparent;
   color: rgb(255, 255, 255);
   -webkit-text-decoration: rgb(68, 255, 161) underline 2px;
-  text-decoration: rgb(68, 255, 161) underline 2px;
+          text-decoration: rgb(68, 255, 161) underline 2px;
   text-underline-offset: 8px;
   font-size: 1rem;
 }
@@ -85,7 +85,7 @@ header .learn-class .learn-button {
 }
 header .learn-class h1 .underline {
   -webkit-text-decoration: rgb(68, 255, 161) underline 2px;
-  text-decoration: rgb(68, 255, 161) underline 2px;
+          text-decoration: rgb(68, 255, 161) underline 2px;
   text-underline-offset: 7px;
 }
 header .learn-class .learn-button {
@@ -624,4 +624,4 @@ header .learn-class .learn-button:hover {
   #founder .access-card .access-card-content .access-button {
     height: 3rem;
   }
-}
+}/*# sourceMappingURL=style.css.map */
