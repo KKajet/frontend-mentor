@@ -13,6 +13,9 @@ const projects = [
   {
     name: "fm-qr-code-component",
   },
+  {
+    name: "fm-nft-code-preview-card-component-main",
+  },
 ];
 
 const list = document.getElementById("list");
