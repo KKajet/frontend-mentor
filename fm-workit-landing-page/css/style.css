@@ -64,6 +64,7 @@ header .apply-button {
 header .apply-button:hover {
   cursor: pointer;
   color: rgb(68, 255, 161);
+  -webkit-transition: all 200ms;
   transition: all 200ms;
 }
 header .img-phone {
@@ -102,6 +103,7 @@ header .learn-class .learn-button:hover {
   border: 2px solid rgb(68, 255, 161);
   color: rgb(68, 255, 161);
   cursor: pointer;
+  -webkit-transition: background-color 100ms ease-in-out;
   transition: background-color 100ms ease-in-out;
 }
 
@@ -111,11 +113,17 @@ header .learn-class .learn-button:hover {
   z-index: 2;
 }
 #list-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 #list-section .container .list-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   padding-top: 22rem;
   padding-bottom: 2rem;
@@ -141,9 +149,15 @@ header .learn-class .learn-button:hover {
   font-weight: bold;
   border: 1px solid rgb(88, 77, 98);
   color: rgb(36, 5, 62);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 
@@ -153,9 +167,15 @@ header .learn-class .learn-button:hover {
 }
 
 .founder-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .founder-img {
@@ -170,9 +190,15 @@ header .learn-class .learn-button:hover {
   color: white;
   width: 730px;
   height: 413px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
 
@@ -197,6 +223,7 @@ header .learn-class .learn-button:hover {
   border: none;
   height: 60px;
   width: 190px;
+  -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 
@@ -205,6 +232,7 @@ header .learn-class .learn-button:hover {
   border: 2px solid rgb(68, 255, 161);
   color: rgb(68, 255, 161);
   cursor: pointer;
+  -webkit-transition: background-color 100ms ease-in-out;
   transition: background-color 100ms ease-in-out;
 }
 
@@ -222,8 +250,12 @@ header .learn-class .learn-button:hover {
   margin-bottom: 2em;
 }
 #footer .flex-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 8rem;
   margin: auto;
 }
@@ -325,9 +357,15 @@ header .learn-class .learn-button:hover {
     padding-top: 20rem;
   }
   #list-section .container .list-flex .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: left;
     padding: 0;
     margin-inline: 10%;
@@ -416,7 +454,10 @@ header .learn-class .learn-button:hover {
     margin-bottom: 4rem;
   }
   #founder .founder-flex-container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #founder .founder-circles {
     display: none;
@@ -500,7 +541,10 @@ header .learn-class .learn-button:hover {
     margin-top: 27rem;
   }
   #founder .founder-flex-container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #founder .access-card {
     display: block;
