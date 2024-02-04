@@ -8,7 +8,7 @@ Frontend Mentor Profile [Frontend Mentor](https://www.frontendmentor.io/profile/
 
 ## Links
 
-- [Project Demo](https://frontend-mentor-kajet.netlify.app/)
+- [Project Demo](https://main--frontend-mentor-kajet.netlify.app/)
 - [Project Repository](https://github.com/KKajet/frontend-mentor)
 
 
