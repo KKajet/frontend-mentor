@@ -14,7 +14,7 @@ const projects = [
     name: "fm-qr-code-component",
   },
   {
-    name: "fm-nft-code-preview-card-component-main",
+    name: "fm-nft-preview-card-component-main",
   },
 ];
 

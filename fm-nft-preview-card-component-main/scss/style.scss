@@ -10,13 +10,132 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-
+  background-color: $very-dark-blue-main;
   font-family: "Outfit";
+}
+#container {
+  background-color: $very-dark-blue-card;
+  border-radius: 1.5rem;
+  width: 350px;
+  height: 596px;
+
+  .img-container {
+    margin-top: 1.25rem;
+    width: 302px;
+    height: 302px;
+    margin: auto;
+    margin-top: 1.5rem;
+    .overlay {
+      width: 302px;
+      height: 302px;
+      position: relative;
+      bottom: 306px;
+      left: 0;
+      right: 0;
+      border-radius: 1rem;
+      opacity: 0;
+      background-color: $cyan;
+      z-index: 2;
+    }
+    .view {
+      opacity: 0;
+      z-index: 3;
+    }
+    .nft-img {
+      width: 302px;
+      border-radius: 1rem;
+      z-index: 1;
+    }
+  }
+  .img-container:hover {
+    .overlay {
+      opacity: 0.4;
+      background-color: $cyan;
+      z-index: 2;
+    }
+    .view {
+      position: relative;
+      bottom: 477px;
+      left: 127px;
+
+      opacity: 1;
+    }
+  }
+  .nft-info {
+    margin: 1.5rem;
+
+    h1 {
+      color: $white;
+      width: 12.35rem;
+    }
+    h1:hover {
+      color: $cyan;
+    }
+    .info {
+      color: $soft-blue;
+      font-weight: 300;
+      margin-block: 1rem;
+    }
+    .flex-center {
+      display: flex;
+      justify-content: space-between;
+      width: 301px;
+      .price {
+        color: $cyan;
+        .ethereum {
+          position: relative;
+          top: 10%;
+          right: 5%;
+        }
+      }
+      .days-left {
+        color: $soft-blue;
+        .clock {
+          position: relative;
+          top: 10%;
+          right: 5%;
+        }
+      }
+    }
+  }
+
+  hr {
+    width: 302px;
+    margin: auto;
+    border: 1px solid $very-dark-blue-line;
+  }
+  .user-info {
+    margin-left: 1.5rem;
+    margin-top: 0.8rem;
+    .avatar {
+      width: 33px;
+      border: 1px solid $white;
+      border-radius: 50%;
+      position: relative;
+      top: 10px;
+    }
+    .username {
+      display: inline;
+      color: $soft-blue;
+      margin-left: 1rem;
+      .name {
+        color: $white;
+      }
+      .name:hover {
+        color: $cyan;
+      }
+    }
+  }
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  color: $white;
   a {
     color: hsl(228, 45%, 44%);
   }

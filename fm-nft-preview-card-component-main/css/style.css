@@ -15,12 +15,131 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
+  background-color: hsl(217, 54%, 11%);
   font-family: "Outfit";
+}
+
+#container {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1.5rem;
+  width: 350px;
+  height: 596px;
+}
+#container .img-container {
+  margin-top: 1.25rem;
+  width: 302px;
+  height: 302px;
+  margin: auto;
+  margin-top: 1.5rem;
+}
+#container .img-container .overlay {
+  width: 302px;
+  height: 302px;
+  position: relative;
+  bottom: 306px;
+  left: 0;
+  right: 0;
+  border-radius: 1rem;
+  opacity: 0;
+  background-color: hsl(178, 100%, 50%);
+  z-index: 2;
+}
+#container .img-container .view {
+  opacity: 0;
+  z-index: 3;
+}
+#container .img-container .nft-img {
+  width: 302px;
+  border-radius: 1rem;
+  z-index: 1;
+}
+#container .img-container:hover .overlay {
+  opacity: 0.4;
+  background-color: hsl(178, 100%, 50%);
+  z-index: 2;
+}
+#container .img-container:hover .view {
+  position: relative;
+  bottom: 477px;
+  left: 127px;
+  opacity: 1;
+}
+#container .nft-info {
+  margin: 1.5rem;
+}
+#container .nft-info h1 {
+  color: hsl(0, 0%, 100%);
+  width: 12.35rem;
+}
+#container .nft-info h1:hover {
+  color: hsl(178, 100%, 50%);
+}
+#container .nft-info .info {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  margin-block: 1rem;
+}
+#container .nft-info .flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 301px;
+}
+#container .nft-info .flex-center .price {
+  color: hsl(178, 100%, 50%);
+}
+#container .nft-info .flex-center .price .ethereum {
+  position: relative;
+  top: 10%;
+  right: 5%;
+}
+#container .nft-info .flex-center .days-left {
+  color: hsl(215, 51%, 70%);
+}
+#container .nft-info .flex-center .days-left .clock {
+  position: relative;
+  top: 10%;
+  right: 5%;
+}
+#container hr {
+  width: 302px;
+  margin: auto;
+  border: 1px solid hsl(215, 32%, 27%);
+}
+#container .user-info {
+  margin-left: 1.5rem;
+  margin-top: 0.8rem;
+}
+#container .user-info .avatar {
+  width: 33px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+}
+#container .user-info .username {
+  display: inline;
+  color: hsl(215, 51%, 70%);
+  margin-left: 1rem;
+}
+#container .user-info .username .name {
+  color: hsl(0, 0%, 100%);
+}
+#container .user-info .username .name:hover {
+  color: hsl(178, 100%, 50%);
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  color: hsl(0, 0%, 100%);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
