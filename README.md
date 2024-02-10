@@ -19,6 +19,6 @@ Frontend Mentor Profile [Frontend Mentor](https://www.frontendmentor.io/profile/
 | 3. Workit Landing Page | Html, Css | [Repo](https://github.com/KKajet/frontend-mentor/tree/main/fm-workit-landing-page) | [Live](https://frontend-mentor-kajet.netlify.app/fm-workit-landing-page/index.html) |
 | 4. QR Code| Html, Css | [Repo](https://github.com/KKajet/frontend-mentor/tree/main/fm-qr-code-component) | [Live](https://main--frontend-mentor-kajet.netlify.app/fm-qr-code-component/index.html) |
 | 5. NFT Card| Html, Css | [Repo](https://github.com/KKajet/frontend-mentor/tree/main/fm-qr-code-component) | [Live](https://main--frontend-mentor-kajet.netlify.app/fm-nft-preview-card-component-main/index.html) |
-| 5. Blog Preview Card| Html, Css | [Repo](https://github.com/KKajet/frontend-mentor/tree/main/fm-blog-preview-card-main) | [Live](https://main--frontend-mentor-kajet.netlify.app/fm-blog-preview-card-main/index.html) |
+| 6. Blog Preview Card| Html, Css | [Repo](https://github.com/KKajet/frontend-mentor/tree/main/fm-blog-preview-card-main) | [Live](https://main--frontend-mentor-kajet.netlify.app/fm-blog-preview-card-main/index.html) |
 
 <p align = "center">Show some ❤️&nbsp; by giving the star to this repo</p>
