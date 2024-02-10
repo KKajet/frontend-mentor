@@ -16,6 +16,9 @@ const projects = [
   {
     name: "fm-nft-preview-card-component-main",
   },
+  {
+    name: "fm-blog-preview-card-main",
+  },
 ];
 
 const list = document.getElementById("list");
