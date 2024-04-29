@@ -20,8 +20,8 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/KKajet/ft-social-links-profile)
-- Live Site URL: [Add live site URL here](https://frontend-mentor-social-links-profile-six.vercel.app/)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/product-preview-card-component-fQ0VUNMM_d)
+- Live Site URL: [Add live site URL here](https://main--frontend-mentor-kajet.netlify.app/fm-product-preview-card-component-main/index.html)
 
 ## My process
 
