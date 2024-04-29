@@ -19,6 +19,9 @@ const projects = [
   {
     name: "fm-blog-preview-card-main",
   },
+  {
+    name: "fm-product-preview-card-component-main",
+  },
 ];
 
 const list = document.getElementById("list");
