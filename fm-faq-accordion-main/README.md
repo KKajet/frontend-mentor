@@ -21,8 +21,8 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/KKajet/)
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [Add solution URL here](https://github.com/KKajet/frontend-mentor/tree/main/fm-faq-accordion-main)
+- Live Site URL: [Add live site URL here](https://main--frontend-mentor-kajet.netlify.app/fm-faq-accordion-main/index.html)
 
 ## My process
 
