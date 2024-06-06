@@ -22,6 +22,9 @@ const projects = [
   {
     name: "fm-product-preview-card-component-main",
   },
+  {
+    name: "fm-faq-accordion-main",
+  },
 ];
 
 const list = document.getElementById("list");

@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+main {
+  width: 700px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  padding: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: 0px 0px 50px -16px black;
+  height: 100%;
+  margin: 4%;
+}
+p {
+  font-family: "Work Sans";
+  color: hsl(292, 16%, 49%);
+  line-height: 1.5;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-family: "Work Sans";
+  font-size: 4rem;
+  color: hsl(292, 42%, 14%);
+  margin-bottom: 3rem;
+}
+h2 {
+  font-family: "Work Sans";
+  font-size: 1.25rem;
+  width: 100%;
+  color: hsl(292, 42%, 14%);
+  display: inline;
+}
+hr {
+  color: hsl(275, 100%, 97%);
+  border: 1px solid;
+}
+
+#card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.hidden {
+  display: none;
+}
+.displayer {
+  display: inline;
+}
+.question {
+  margin-block: 1rem;
+  display: flex;
+}
+
+.icon-plus {
+  text-align: right;
+}
+
+.icon-plus:hover,
+.icon-minus:hover {
+  cursor: pointer;
+}
+.icon-star {
+  position: relative;
+  margin-right: 1rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 440px) {
+  body {
+    background-image: url("assets/images/background-pattern-mobile.svg");
+  }
+}
