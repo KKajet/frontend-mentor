@@ -25,6 +25,9 @@ const projects = [
   {
     name: "fm-faq-accordion-main",
   },
+  {
+    name: "fm-interactive-rating-component-main",
+  },
 ];
 
 const list = document.getElementById("list");
