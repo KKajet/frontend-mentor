@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Manrope";
+}
+#main-card {
+  width: 950px;
+  height: 330px;
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 20px;
+}
+#drawers-image {
+  height: 100%;
+  border-radius: 20px 0px 0px 20px;
+}
+.profile-card {
+  margin: 2rem;
+}
+.description {
+  color: hsl(214, 17%, 51%);
+  font-size: 15px;
+  font-weight: 500;
+
+  margin-bottom: 1rem;
+}
+h1 {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.avatar {
+  width: 50px;
+  border-radius: 50%;
+}
+.filter {
+  filter: brightness(0) invert(1);
+}
+.name {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+  position: relative;
+  top: 2px;
+}
+.date {
+  color: hsl(214, 17%, 51%);
+  font-weight: 500;
+  position: relative;
+  bottom: 2px;
+}
+
+.share-card {
+  background-color: hsl(210, 46%, 95%);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: display 0.5s ease-in-out 0s;
+}
+.profile-share-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.share-toggle {
+  display: none;
+}
+
+.show-card {
+  background-color: hsl(217, 19%, 35%);
+  width: 230px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  bottom: 110px;
+  left: 785px;
+}
+
+.triangle {
+  background-color: hsl(217, 19%, 35%);
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  position: relative;
+  bottom: 45px;
+  left: 148px;
+}
+.show-p {
+  display: inline;
+  letter-spacing: 2px;
+  color: hsl(212, 23%, 69%);
+  font-weight: 500;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.icons {
+  cursor: pointer;
+}
+td {
+  padding-left: 5px;
+}
+.share-card:hover {
+  cursor: pointer;
+  transition: background 0.1s ease-in-out 0s;
+}
+
+@media only screen and (max-width: 950px) {
+  #main-card {
+    flex-direction: column;
+    width: 300px;
+    height: 540px;
+  }
+  #drawers-image {
+    width: 300px;
+    border-radius: 20px 20px 0px 0px;
+  }
+  h1 {
+    font-size: 0.9rem;
+  }
+  .description {
+    font-size: 13px;
+    margin-bottom: 1.5rem;
+  }
+  .triangle {
+    display: none;
+  }
+  .show-card {
+    width: 300px;
+    height: 80px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 0px 0px 20px 20px;
+    justify-content: left;
+  }
+  .show-p {
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+  .icons {
+    margin-inline: 0.25rem;
+  }
+  .share-card {
+    z-index: 2;
+    position: relative;
+    top: 7px;
+  }
+}

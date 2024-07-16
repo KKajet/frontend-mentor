@@ -28,6 +28,9 @@ const projects = [
   {
     name: "fm-interactive-rating-component-main",
   },
+  {
+    name: "fm-article-preview-component-master",
+  },
 ];
 
 const list = document.getElementById("list");
