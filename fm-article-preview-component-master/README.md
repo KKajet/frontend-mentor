@@ -1,6 +1,6 @@
 # Frontend Mentor - Workit landing page solution
 
-This is a solution to the [Workit landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/workit-landing-page-2fYnyle5lu).
+This is a solution to the [Workit landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT).
 
 ## Table of contents
 
@@ -20,8 +20,8 @@ This is a solution to the [Workit landing page challenge on Frontend Mentor](htt
 
 ### Links
 
-- Solution URL: [Solution URL here]()
-- Live Site URL: [Live site URL here]()
+- Solution URL: [Solution URL here](https://github.com/KKajet/frontend-mentor/tree/main/fm-article-preview-component-master)
+- Live Site URL: [Live site URL here](https://main--frontend-mentor-kajet.netlify.app/fm-article-preview-component-master/index.html)
 
 ## My process
 
