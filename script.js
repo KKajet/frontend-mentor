@@ -5,34 +5,34 @@ const projects = [
     name: "fm-recipe-page",
   },
   {
-    name: "fm-social-links-profile-main",
+    name: "fm-social-links-profile",
   },
   {
     name: "fm-workit-landing-page",
   },
   {
-    name: "fm-qr-code-component",
+    name: "fm-qr-code",
   },
   {
-    name: "fm-nft-preview-card-component-main",
+    name: "fm-nft-preview-card",
   },
   {
-    name: "fm-blog-preview-card-main",
+    name: "fm-blog-preview-card",
   },
   {
-    name: "fm-product-preview-card-component-main",
+    name: "fm-product-preview-card",
   },
   {
     name: "fm-faq-accordion-main",
   },
   {
-    name: "fm-interactive-rating-component-main",
+    name: "fm-interactive-rating",
   },
   {
-    name: "fm-article-preview-component-master",
+    name: "fm-article-preview",
   },
   {
-    name: "fm-product-list-with-cart-main",
+    name: "fm-product-list-with-cart",
   },
 ];
 
