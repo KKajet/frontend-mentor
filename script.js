@@ -31,6 +31,9 @@ const projects = [
   {
     name: "fm-article-preview-component-master",
   },
+  {
+    name: "fm-product-list-with-cart-main",
+  },
 ];
 
 const list = document.getElementById("list");
