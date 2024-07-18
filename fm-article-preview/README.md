@@ -21,7 +21,7 @@ This is a solution to the [Workit landing page challenge on Frontend Mentor](htt
 ### Links
 
 - Solution URL: [Solution URL here](https://github.com/KKajet/frontend-mentor/tree/main/fm-article-preview-component-master)
-- Live Site URL: [Live site URL here](https://main--frontend-mentor-kajet.netlify.app/fm-article-preview-component-master/index.html)
+- Live Site URL: [Live site URL here](https://frontend-mentor-git-main-kkajets-projects.vercel.app/fm-article-preview/index.html)
 
 ## My process
 

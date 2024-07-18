@@ -20,8 +20,8 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [Add solution URL here](https://github.com/KKajet/frontend-mentor/tree/main/fm-blog-preview-card)
+- Live Site URL: [Add live site URL here](https://frontend-mentor-git-main-kkajets-projects.vercel.app/fm-blog-preview-card/index.html)
 
 ## My process
 

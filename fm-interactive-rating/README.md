@@ -16,7 +16,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 ### Links
 
 - Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here](https://main--frontend-mentor-kajet.netlify.app/fm-interactive-rating-component-main/index.html)
+- Live Site URL: [Add live site URL here](https://frontend-mentor-git-main-kkajets-projects.vercel.app/fm-interactive-rating/index.html)
 
 ## My process
 

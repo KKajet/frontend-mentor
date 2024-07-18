@@ -20,8 +20,8 @@ This is a solution to the [Workit landing page challenge on Frontend Mentor](htt
 
 ### Links
 
-- Solution URL: [Solution URL here]()
-- Live Site URL: [Live site URL here]()
+- Solution URL: [Solution URL here](https://github.com/KKajet/frontend-mentor/tree/main/fm-qr-code)
+- Live Site URL: [Live site URL here](https://frontend-mentor-kkajets-projects.vercel.app/fm-qr-code/index.html)
 
 ## My process
 

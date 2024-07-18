@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://main--frontend-mentor-kajet.netlify.app/fm-product-list-with-cart/index.html)
+- Live Site URL: [Add live site URL here](https://frontend-mentor-git-main-kkajets-projects.vercel.app/fm-product-list-with-cart/index.html)
 
 ## My process
 
