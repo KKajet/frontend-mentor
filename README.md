@@ -22,6 +22,6 @@ Frontend Mentor Profile [Frontend Mentor](https://www.frontendmentor.io/profile/
 | 7. Product Preview Card Component |   Html, Css   | [Repo](https://github.com/KKajet/frontend-mentor/tree/main/fm-product-preview-card-component-main) | [Live](https://main--frontend-mentor-kajet.netlify.app/fm-product-preview-card-component-main/index.html) |
 | 8. FAQ Page                       | Html, Css, JS |         [Repo](https://github.com/KKajet/frontend-mentor/tree/main/fm-faq-accordion-main)          |         [Live](https://main--frontend-mentor-kajet.netlify.app/fm-faq-accordion-main/index.html)          |
 | 9. Interactive Rating Page        | Html, Css, JS |  [Repo](https://github.com/KKajet/frontend-mentor/tree/main/fm-interactive-rating-component-main)  |  [Live](https://main--frontend-mentor-kajet.netlify.app/fm-interactive-rating-component-main/index.html)  |
-| 9. Article Preview Component      | Html, Css, JS |  [Repo](https://github.com/KKajet/frontend-mentor/tree/main/fm-article-preview-component-master)   |  [Live](https://main--frontend-mentor-kajet.netlify.app/fm-article-preview-component-master/index.html)   |
+| 10. Article Preview Component      | Html, Css, JS |  [Repo](https://github.com/KKajet/frontend-mentor/tree/main/fm-article-preview-component-master)   |  [Live](https://main--frontend-mentor-kajet.netlify.app/fm-article-preview-component-master/index.html)   |
 
 <p align = "center">Show some ❤️&nbsp; by giving the star to this repo</p>
