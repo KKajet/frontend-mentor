@@ -23,7 +23,7 @@ const projects = [
     name: "fm-product-preview-card",
   },
   {
-    name: "fm-faq-accordion-main",
+    name: "fm-faq-accordion",
   },
   {
     name: "fm-interactive-rating",
