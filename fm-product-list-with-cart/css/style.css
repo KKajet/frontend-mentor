@@ -193,31 +193,81 @@ h2 {
   height: 20px;
 }
 
-.decrement {
+.decrement0,
+.decrement1,
+.decrement2,
+.decrement3,
+.decrement4,
+.decrement5,
+.decrement6,
+.decrement7,
+.decrement8 {
   position: relative;
   top: 10px;
   left: 15px;
 }
 
-.decrement:hover {
+.decrement0:hover,
+.decrement1:hover,
+.decrement2:hover,
+.decrement3:hover,
+.decrement4:hover,
+.decrement5:hover,
+.decrement6:hover,
+.decrement7:hover,
+.decrement8:hover {
   background-color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
-.increment {
+.increment0,
+.increment1,
+.increment2,
+.increment3,
+.increment4,
+.increment5,
+.increment6,
+.increment7,
+.increment8 {
   position: relative;
   bottom: 33px;
   left: 120px;
 }
 
-.increment:hover {
+.increment0:hover,
+.increment1:hover,
+.increment2:hover,
+.increment3:hover,
+.increment4:hover,
+.increment5:hover,
+.increment6:hover,
+.increment7:hover,
+.increment8:hover {
   background-color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
-.unit {
+.unit0,
+.unit1,
+.unit2,
+.unit3,
+.unit4,
+.unit5,
+.unit6,
+.unit7,
+.unit8 {
   position: relative;
   bottom: 11px;
+}
+
+.svg-filter {
+  border-radius: 50px;
+  padding: 6px;
+}
+
+.svg-filter:hover {
+  -webkit-filter: brightness(0) saturate(100%) invert(23%) sepia(99%) saturate(1681%) hue-rotate(356deg) brightness(99%) contrast(94%);
+          filter: brightness(0) saturate(100%) invert(23%) sepia(99%) saturate(1681%) hue-rotate(356deg) brightness(99%) contrast(94%);
 }
 
 #cart {
