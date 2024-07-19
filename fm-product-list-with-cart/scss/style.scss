@@ -115,7 +115,7 @@ h2 {
 .price {
   color: $red;
 }
-.cart-button {
+.imgBtn-container button {
   width: 160px;
   height: 44px;
   border: 1px $rose-400 solid;
@@ -124,8 +124,20 @@ h2 {
   bottom: 25px;
   left: 50px;
 }
-.cart-button:hover {
+.btn-clicked {
+  background-color: $red;
+  position: relative;
+  bottom: 25px;
+  left: 50px;
+  border-radius: 160px;
+  color: $white;
+}
+
+.imgBtn-container button:hover {
   cursor: pointer;
+}
+.imgBtn-container .btn-clicked:hover {
+  cursor: default;
 }
 .add-to-card {
   position: relative;
@@ -136,6 +148,41 @@ h2 {
 .imgBtn-container {
   width: 250px;
   height: 262px;
+}
+
+.flex-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: $white 1px solid;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+}
+.decrement {
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+.decrement:hover {
+  background-color: $white;
+  cursor: pointer;
+}
+
+.increment {
+  position: relative;
+  bottom: 33px;
+  left: 120px;
+}
+.increment:hover {
+  background-color: $white;
+  cursor: pointer;
+}
+.delete-icon {
+}
+.unit {
+  position: relative;
+  bottom: 11px;
 }
 #cart {
   background-color: $white;
