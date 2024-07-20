@@ -1,4 +1,9 @@
-let quantity = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+// function sum() {
+//   console.log(sumQuan - 9);
+//   return sumQuan;
+// }
+
+let quantity = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 for (let i = 0; i < 9; i++) {
   fetch("./data.json")
     .then((res) => {
@@ -35,8 +40,17 @@ for (let i = 0; i < 9; i++) {
       price.classList.add("text-preset-3", "price");
       price.innerText = `$${product[i].price.toFixed(2)}`;
 
+      let isClicked = false;
+      let sumQuantity = document.querySelector(".sum");
       let buttonClick = document.querySelector(`.cart-button${i}`);
       buttonClick.addEventListener("click", function () {
+        let sumQuan = quantity.reduce((acc, curr) => acc + curr);
+        if (!btn.className.includes("btn-clicked") && !isClicked) {
+          quantity[i]++;
+          console.log(quantity);
+          sumQuan = quantity.reduce((acc, curr) => acc + curr);
+        }
+        sumQuantity.innerHTML = sumQuan;
         btn.classList.add("btn-clicked");
         btn.innerHTML = `
         <div class="flex-button dec ">
@@ -54,22 +68,27 @@ for (let i = 0; i < 9; i++) {
         unitSpan.classList.add(`unit${i}`);
         let decreaseBtn = document.querySelector(`.decrement${i}`);
         let increaseBtn = document.querySelector(`.increment${i}`);
+        isClicked = true;
+
         if (quantity[i] > 0) {
           decreaseBtn.addEventListener("click", function () {
+            if (quantity[i] == 1) {
+              quantity[i] = 0;
+            }
             quantity[i]--;
             console.log(quantity);
-            unitSpan[i].innerText = quantity[i];
           });
           increaseBtn.addEventListener("click", function () {
             quantity[i]++;
             console.log(quantity);
-            unitSpan[i].innerText = quantity[i];
           });
         } else {
           quantity[i]++;
           console.log(quantity);
           btn.classList.remove("btn-clicked");
           btn.innerHTML = '<img src="./assets/images/icon-add-to-cart.svg" style="position: relative; top: 3px; " /> <span class="add-to-card">Add to Cart</span>';
+          isClicked = false;
+          sumQuantity.innerHTML = sumQuan + 1;
         }
       });
     })
