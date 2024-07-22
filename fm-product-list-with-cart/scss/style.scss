@@ -252,17 +252,130 @@ h2 {
   text-align: center;
   padding-inline: $spacing200;
 }
+.neutral-info {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  background-color: $rose-50;
+  margin-block: $spacing300;
+  border-radius: $spacing100;
+  .carbon-img {
+    width: 20px;
+  }
+  .carbon-info {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: $rose-900;
+    margin-left: $spacing100;
+  }
+}
+.confirm-button-container {
+  text-align: center;
+  .confirm-button {
+    color: $white;
+    background-color: $red;
+    width: 100%;
+    height: 53px;
+    border: 0px;
+    border-radius: 100px;
+  }
+
+  .confirm-button:hover {
+    cursor: pointer;
+    background-color: darken($color: $red, $amount: 15%);
+    color: $white;
+  }
+}
+.order-total-price-container {
+  height: 30px;
+  .order-total {
+    color: $rose-900;
+    display: inline;
+    position: relative;
+    top: 5px;
+    float: left;
+  }
+  .order-price {
+    color: $rose-900;
+    display: inline;
+    float: right;
+    text-align: right;
+  }
+}
+
 #footer {
   clear: both;
   position: relative;
   top: 30px;
 }
+.empty-display {
+  display: none;
+}
+.delete-img-container {
+  border: 1px $rose-400 solid;
+  width: 18px;
+  height: 18px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  position: relative;
+  top: 15px;
+  .delete.img {
+    filter: brightness(0) saturate(100%) invert(69%) sepia(9%) saturate(843%) hue-rotate(319deg) brightness(82%) contrast(84%);
+  }
+}
+.delete-img-container:hover {
+  cursor: pointer;
+  filter: brightness(0);
+}
+.full-cart {
+  h3 {
+    color: $rose-900;
+    font-family: RedHatBold;
+    margin-bottom: $spacing100;
+    width: max-content;
+
+    float: left;
+  }
+  .quantity-and-price {
+    margin-bottom: $spacing200;
+    clear: both;
+    text-align: left;
+  }
+  .quantity {
+    color: $red;
+    display: inline;
+    margin-right: 12px;
+    width: 21px;
+  }
+  .solo-price {
+    color: $rose-500;
+    display: inline;
+    margin-inline: $spacing100;
+  }
+  .sum-price {
+    color: $rose-500;
+    display: inline;
+  }
+  hr {
+    border: 1px $rose-100 solid;
+    margin-bottom: $spacing150;
+  }
+}
+
 @media only screen and (max-width: 1435px) {
   #cart {
     float: left;
     text-align: center;
     width: 762px;
     margin-top: $spacing400;
+    margin: auto;
+    margin-top: $spacing500;
   }
   #main-page {
     max-width: 830px;
@@ -302,6 +415,7 @@ h2 {
   }
   #main-page {
     max-width: 274px;
+    margin: auto;
   }
   #cart {
     width: 200px;
@@ -312,5 +426,11 @@ h2 {
   body {
     background-color: $rose-50;
     margin-inline: $spacing300;
+  }
+  .carbon-info {
+    font-size: 10px;
+    .carbon-neutral-span {
+      font-size: 10px;
+    }
   }
 }
