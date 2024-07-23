@@ -413,8 +413,6 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .order-confirmed .product-and-total .confirm-total .confirm-order-total {
   display: inline;
@@ -439,10 +437,6 @@ h2 {
 .order-confirmed .new-order-button-container .new-order-button:hover {
   background-color: #80260a;
   color: rgb(255, 255, 255);
-}
-
-.confirm-product {
-  margin-block: 16px;
 }
 
 .confirm-img {

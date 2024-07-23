@@ -352,8 +352,7 @@ h2 {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      padding-top: $spacing300;
-      padding-bottom: $spacing300;
+
       .confirm-order-total {
         display: inline;
       }
@@ -382,9 +381,6 @@ h2 {
       color: $white;
     }
   }
-}
-.confirm-product {
-  margin-block: $spacing200;
 }
 
 .confirm-img {
