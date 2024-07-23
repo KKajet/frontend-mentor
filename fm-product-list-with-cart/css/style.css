@@ -391,6 +391,17 @@ h2 {
   color: rgb(135, 99, 90);
   margin-bottom: 24px;
 }
+.order-confirmed .confirm-prod0,
+.order-confirmed .confirm-prod1,
+.order-confirmed .confirm-prod2,
+.order-confirmed .confirm-prod3,
+.order-confirmed .confirm-prod4,
+.order-confirmed .confirm-prod5,
+.order-confirmed .confirm-prod6,
+.order-confirmed .confirm-prod7,
+.order-confirmed .confirm-prod8 {
+  margin-bottom: 24px;
+}
 .order-confirmed .product-and-total {
   padding: 24px;
   background-color: rgb(252, 248, 246);
@@ -588,6 +599,23 @@ h2 {
 .full-cart hr {
   border: 1px rgb(245, 238, 236) solid;
   margin-bottom: 12px;
+  width: 95%;
+}
+
+.hr-line-confirm0,
+.hr-line-confirm1,
+.hr-line-confirm2,
+.hr-line-confirm3,
+.hr-line-confirm4,
+.hr-line-confirm5,
+.hr-line-confirm6,
+.hr-line-confirm7,
+.hr-line-confirm8 {
+  width: 100%;
+  border: 1px rgb(245, 238, 236) solid;
+  margin-bottom: 12px;
+  position: relative;
+  top: 15px;
 }
 
 .attribution {
@@ -680,6 +708,10 @@ h2 {
   }
   .order-confirmed {
     width: 80%;
+    top: 400%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 @-webkit-keyframes tranitionIn {

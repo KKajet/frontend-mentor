@@ -163,7 +163,7 @@ for (let i = 0; i < 9; i++) {
             let confirmQuantity = document.createElement("p");
             let confirmSoloPrice = document.createElement("p");
             let confirmTotalPrice = document.createElement("p");
-
+            let confirmHr = document.createElement("hr");
             confirmProductList.append(confirmProduct);
             confirmProduct.classList.add(`confirm-prod${[i]}`);
             confirmProduct.append(confirmDivInfo);
@@ -183,6 +183,8 @@ for (let i = 0; i < 9; i++) {
             confirmSoloPrice.classList.add("confirm-solo-price", "text-preset-4");
             confirmProduct.append(confirmTotalPrice);
             confirmTotalPrice.classList.add(`confirm-total${i}`, "text-preset-3");
+            confirmProduct.append(confirmHr);
+            confirmHr.classList.add(`hr-line-confirm${i}`);
             let confirmProd = document.querySelectorAll(`.confirm-prod${i}`);
             let confirmNa = document.querySelectorAll(`.confirm-name${i}`);
             confirmButton.addEventListener("click", function () {

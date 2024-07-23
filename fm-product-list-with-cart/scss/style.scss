@@ -340,6 +340,17 @@ h2 {
       }
     }
   }
+  .confirm-prod0,
+  .confirm-prod1,
+  .confirm-prod2,
+  .confirm-prod3,
+  .confirm-prod4,
+  .confirm-prod5,
+  .confirm-prod6,
+  .confirm-prod7,
+  .confirm-prod8 {
+    margin-bottom: $spacing300;
+  }
   .product-and-total {
     padding: $spacing300;
     background-color: $rose-50;
@@ -508,7 +519,23 @@ h2 {
   hr {
     border: 1px $rose-100 solid;
     margin-bottom: $spacing150;
+    width: 95%;
   }
+}
+.hr-line-confirm0,
+.hr-line-confirm1,
+.hr-line-confirm2,
+.hr-line-confirm3,
+.hr-line-confirm4,
+.hr-line-confirm5,
+.hr-line-confirm6,
+.hr-line-confirm7,
+.hr-line-confirm8 {
+  width: 100%;
+  border: 1px $rose-100 solid;
+  margin-bottom: $spacing150;
+  position: relative;
+  top: 15px;
 }
 .attribution {
   font-size: 11px;
@@ -601,6 +628,9 @@ h2 {
   }
   .order-confirmed {
     width: 80%;
+    top: 400%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 @keyframes tranitionIn {
