@@ -29,6 +29,7 @@ body {
   background-color: $rose-50;
   margin-block: $spacing1100;
   margin-inline: $spacing500;
+  animation: tranitionIn 1s;
 }
 h1 {
   width: min-content;
@@ -238,6 +239,7 @@ h2 {
   border-radius: $spacing150;
   position: relative;
   bottom: 50px;
+  animation: tranitionInCart 1.5s;
 }
 .your-cart {
   margin-bottom: $spacing300;
@@ -305,7 +307,152 @@ h2 {
     text-align: right;
   }
 }
+.order-confirmed {
+  background-color: $white;
+  animation: tranitionConfirm 0.5s;
+  width: 592px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: $spacing500;
+  border-radius: 12px;
+  margin-top: 15rem;
 
+  .confirm-container {
+    .confirm-img-container {
+      .confirm-img {
+        width: 48px;
+        margin-bottom: $spacing300;
+      }
+    }
+    .information {
+      clear: both;
+      .confirm-header {
+        font-size: 2rem;
+        width: auto;
+      }
+      .enjoy-para {
+        width: auto;
+        color: $rose-500;
+        margin-bottom: $spacing300;
+      }
+    }
+  }
+  .product-and-total {
+    padding: $spacing300;
+    background-color: $rose-50;
+    border-radius: 8px;
+    .confirm-product-list {
+      margin-bottom: $spacing300;
+    }
+    .confirm-total {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: $spacing300;
+      padding-bottom: $spacing300;
+      .confirm-order-total {
+        display: inline;
+      }
+      .confirm-total-price {
+        display: inline;
+        float: right;
+      }
+    }
+  }
+  .black-screen {
+    width: 1920px;
+    height: 1080px;
+  }
+  .new-order-button-container {
+    .new-order-button {
+      color: $white;
+      background-color: $red;
+      width: 100%;
+      height: 53px;
+      border: 0px;
+      border-radius: 100px;
+      margin-top: $spacing400;
+    }
+    .new-order-button:hover {
+      background-color: darken($color: $red, $amount: 15%);
+      color: $white;
+    }
+  }
+}
+.confirm-product {
+  margin-block: $spacing200;
+}
+
+.confirm-img {
+  clear: both;
+  width: 60px;
+  height: 60px;
+  margin-right: $spacing200;
+  float: left;
+  border-radius: 4px;
+}
+.confirm-product-list {
+  display: flex;
+  flex-direction: column;
+}
+.confirm-div {
+  display: inline;
+}
+.confirm-name {
+  color: $rose-900;
+  position: relative;
+  top: 6px;
+}
+.confirm-quantity0,
+.confirm-quantity1,
+.confirm-quantity2,
+.confirm-quantity3,
+.confirm-quantity4,
+.confirm-quantity5,
+.confirm-quantity6,
+.confirm-quantity7,
+.confirm-quantity8 {
+  display: inline;
+  color: $red;
+  margin-right: $spacing100;
+}
+
+.confirm-solo-price {
+  display: inline;
+  color: $rose-500;
+}
+.confirm-quantity0,
+.confirm-quantity1,
+.confirm-quantity2,
+.confirm-quantity3,
+.confirm-quantity4,
+.confirm-quantity5,
+.confirm-quantity6,
+.confirm-quantity7,
+.confirm-quantity8,
+.confirm-solo-price {
+  position: relative;
+  top: 14px;
+}
+.confirm-total0,
+.confirm-total1,
+.confirm-total2,
+.confirm-total3,
+.confirm-total4,
+.confirm-total5,
+.confirm-total6,
+.confirm-total7,
+.confirm-total8 {
+  display: inline;
+  float: right;
+  color: $rose-900;
+  position: relative;
+  bottom: 22px;
+}
 #footer {
   clear: both;
   position: relative;
@@ -432,5 +579,39 @@ h2 {
     .carbon-neutral-span {
       font-size: 10px;
     }
+  }
+  .order-confirmed {
+    width: 80%;
+  }
+}
+@keyframes tranitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes tranitionInCart {
+  from {
+    opacity: 0;
+    transform: translateX(400px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes tranitionConfirm {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

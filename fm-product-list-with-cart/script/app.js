@@ -89,6 +89,7 @@ for (let i = 0; i < 9; i++) {
         let pSumPriceClass = document.querySelector(`.sum-price${i}`);
         let orderPrice = document.querySelector(".order-price");
         let orderTotalContainer = document.querySelector(".order-total-container");
+
         let totalOrderPrice =
           quantity[0] * product[0].price +
           quantity[1] * product[1].price +
@@ -144,8 +145,81 @@ for (let i = 0; i < 9; i++) {
             pSumPrice.innerText = `$${productSum.toFixed(2)}`;
             productInCart.append(hrLine);
             hrLine.classList.add(`hr-line${i}`);
-
             isCreated[i] = true;
+
+            let confirmButton = document.querySelector(".confirm-button");
+            let orderConfirmed = document.querySelector(".order-confirmed");
+            let confirmContainer = document.querySelector(".confirm-container");
+            let productAndTotal = document.querySelector(".product-and-total");
+            let newOrderButtonContainer = document.querySelector(".new-order-button-container");
+            let newOrderButton = document.querySelector(".new-order-button");
+            let confirmTotal = document.querySelector(".confirm-total-price");
+            let confirmProductList = document.querySelector(".confirm-product-list");
+            let confirmProduct = document.createElement("div");
+            let confirmDivInfo = document.createElement("div");
+            let confirmImg = document.createElement("img");
+            let confirmDiv = document.createElement("div");
+            let confirmName = document.createElement("p");
+            let confirmQuantity = document.createElement("p");
+            let confirmSoloPrice = document.createElement("p");
+            let confirmTotalPrice = document.createElement("p");
+
+            confirmProductList.append(confirmProduct);
+            confirmProduct.classList.add(`confirm-prod${[i]}`);
+            confirmProduct.append(confirmDivInfo);
+            confirmProduct.classList.add("confirm-product");
+            confirmDivInfo.append(confirmImg);
+            confirmDivInfo.classList.add("confirm-div-info");
+            confirmImg.src = product[i].image.thumbnail;
+            confirmImg.classList.add(`confirm-img`);
+            confirmDivInfo.append(confirmDiv);
+            confirmDiv.classList.add("confirm-div");
+            confirmDiv.append(confirmName);
+            confirmName.innerText = product[i].name;
+            confirmName.classList.add(`confirm-name`, "text-preset-4-bold");
+            confirmDiv.append(confirmQuantity);
+            confirmQuantity.classList.add(`confirm-quantity${i}`, "text-preset-4-bold");
+            confirmDiv.append(confirmSoloPrice);
+            confirmSoloPrice.classList.add("confirm-solo-price", "text-preset-4");
+            confirmProduct.append(confirmTotalPrice);
+            confirmTotalPrice.classList.add(`confirm-total${i}`, "text-preset-3");
+
+            confirmButton.addEventListener("click", function () {
+              let allButtons = document.querySelectorAll(`button`);
+              let mainPage = document.querySelector(".black-screen");
+              let body = document.querySelector("body");
+              orderConfirmed.classList.remove("empty-display");
+              confirmContainer.classList.remove("empty-display");
+              productAndTotal.classList.remove("empty-display");
+              newOrderButtonContainer.classList.remove("empty-display");
+              productSum = product[i].price * quantity[i];
+              confirmTotalPrice.innerText = `$${productSum.toFixed(2)}`;
+              totalOrderPrice =
+                quantity[0] * product[0].price +
+                quantity[1] * product[1].price +
+                quantity[2] * product[2].price +
+                quantity[3] * product[3].price +
+                quantity[4] * product[4].price +
+                quantity[5] * product[5].price +
+                quantity[6] * product[6].price +
+                quantity[7] * product[7].price +
+                quantity[8] * product[8].price;
+              confirmTotal.innerText = `$${totalOrderPrice.toFixed(2)}`;
+              confirmSoloPrice.innerText = `@ $${product[i].price.toFixed(2)}`;
+              confirmQuantity.innerText = `${quantity[i]}x`;
+              confirmButton.disabled = true;
+              decDiv.disabled = true;
+              incDiv.disabled = true;
+              mainPage.style.filter = "brightness(50%)";
+              body.style.background = "rgba(0,0,0,0.5)";
+              mainPage;
+              for (let j = 0; j < allButtons.length; j++) {
+                allButtons[j].disabled = true;
+                allButtons[j].style.cursor = "default";
+              }
+              newOrderButton.disabled = false;
+              newOrderButton.style.cursor = "pointer";
+            });
           } else {
             productNameClass.innerText = `${product[i].name}`;
             paraQuantityClass.innerText = `x${quantity[i]}`;
@@ -188,12 +262,11 @@ for (let i = 0; i < 9; i++) {
           }
           btn.classList.remove("btn-clicked");
           btn.innerHTML = '<img src="./assets/images/icon-add-to-cart.svg" style="position: relative; top: 3px; " /> <span class="add-to-card">Add to Cart</span>';
-
           isClicked = false;
           sumQuantity.innerHTML = sumQuan + 1;
-          if (sumQuan <= 0) {
-            orderTotalContainer.classList.add("empty-display");
+          if (sumQuan < 0) {
             empty.classList.remove("empty-display");
+            orderTotalContainer.classList.add("empty-display");
           }
         }
       });
