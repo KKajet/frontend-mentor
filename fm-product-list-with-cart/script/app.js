@@ -176,15 +176,22 @@ for (let i = 0; i < 9; i++) {
             confirmDiv.classList.add("confirm-div");
             confirmDiv.append(confirmName);
             confirmName.innerText = product[i].name;
-            confirmName.classList.add(`confirm-name`, "text-preset-4-bold");
+            confirmName.classList.add(`confirm-name`, "text-preset-4-bold", `confirm-name${i}`);
             confirmDiv.append(confirmQuantity);
             confirmQuantity.classList.add(`confirm-quantity${i}`, "text-preset-4-bold");
             confirmDiv.append(confirmSoloPrice);
             confirmSoloPrice.classList.add("confirm-solo-price", "text-preset-4");
             confirmProduct.append(confirmTotalPrice);
             confirmTotalPrice.classList.add(`confirm-total${i}`, "text-preset-3");
-
+            let confirmProd = document.querySelectorAll(`.confirm-prod${i}`);
+            let confirmNa = document.querySelectorAll(`.confirm-name${i}`);
             confirmButton.addEventListener("click", function () {
+              if (quantity[i] <= 0) {
+                for (let x = 0; x < confirmProd.length; x++) {
+                  confirmProd[x].classList.add("empty-display");
+                  confirmNa[x].classList.add("empty-display");
+                }
+              }
               let allButtons = document.querySelectorAll(`button`);
               let mainPage = document.querySelector(".black-screen");
               let body = document.querySelector("body");
