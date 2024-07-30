@@ -185,8 +185,10 @@ for (let i = 0; i < 9; i++) {
             confirmTotalPrice.classList.add(`confirm-total${i}`, "text-preset-3");
             confirmProduct.append(confirmHr);
             confirmHr.classList.add(`hr-line-confirm${i}`);
+            img.classList.add("product-image-border");
             let confirmProd = document.querySelectorAll(`.confirm-prod${i}`);
             let confirmNa = document.querySelectorAll(`.confirm-name${i}`);
+
             confirmButton.addEventListener("click", function () {
               if (quantity[i] <= 0) {
                 for (let x = 0; x < confirmProd.length; x++) {
@@ -194,6 +196,7 @@ for (let i = 0; i < 9; i++) {
                   confirmNa[x].classList.add("empty-display");
                 }
               }
+
               let allButtons = document.querySelectorAll(`button`);
               let mainPage = document.querySelector(".black-screen");
               let body = document.querySelector("body");
@@ -235,11 +238,12 @@ for (let i = 0; i < 9; i++) {
             pSoloPriceClass.innerText = `@ $${product[i].price.toFixed(2)}`;
             pSumPriceClass.innerText = `$${productSum.toFixed(2)}`;
             crea.classList.remove(`empty-display`);
+            img.classList.add("product-image-border");
           }
 
           deleteImgDiv.addEventListener("click", function () {
             let crea = document.querySelector(`.created${i}`);
-
+            img.classList.remove("product-image-border");
             crea.classList.add(`empty-display`);
             btn.classList.remove("btn-clicked");
             btn.innerHTML = '<img src="./assets/images/icon-add-to-cart.svg" style="position: relative; top: 3px; " /> <span class="add-to-card">Add to Cart</span>';
@@ -265,6 +269,7 @@ for (let i = 0; i < 9; i++) {
           });
           sumQuantity.innerHTML = sumQuan;
         } else {
+          img.classList.remove("product-image-border");
           quantity[i]++;
           if (quantity[i] <= 0) {
             crea.classList.add(`empty-display`);

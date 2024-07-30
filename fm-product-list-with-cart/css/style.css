@@ -126,6 +126,12 @@ h2 {
 .product-image {
   height: 240px;
   border-radius: 8px;
+  -webkit-box-shadow: 0px 2px 20px -10px black;
+          box-shadow: 0px 2px 20px -10px black;
+}
+
+.product-image-border {
+  border: 3px rgb(199, 59, 15) solid;
 }
 
 .category {
