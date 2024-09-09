@@ -34,6 +34,9 @@ const projects = [
   {
     name: "fm-product-list-with-cart",
   },
+  {
+    name: "fm-four-card-feature-section",
+  },
 ];
 
 const list = document.getElementById("list");
